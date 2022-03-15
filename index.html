@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <!--font awesome-->
+ <script src="https://kit.fontawesome.com/6a765783e1.js" crossorigin="anonymous"></script>
+ <!--jquery-->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--js-->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!--style css-->
+    <link rel="stylesheet" href="style.css">
+    <title>MYadmin</title>
+  </head>
+  
+  <body>
+
+
+ <!-- navbar -->
+ 
+ <div class="navbar fixed">
+  <nav class="blue">
+      <div class="container">
+          <div class="nav-wrapper">
+              <a href="#" class="brand-logo">MYadmin</a>
+              <a href="#" data-target="bouka" class="sidenav-trigger">
+                  <i class="fas fa-bars"></i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                  <li><a href="index.html">Dashboard</a></li>
+                  <li><a href="index1.html">Posts</a></li>
+                  <li><a href="index2.html">Categories</a></li>
+                  <li><a href="index3.html">Comments</a></li>
+                  <li><a href="index4.html">Users</a></li>
+                  <li><a data-target="bouka" class="sidenav-trigger show-on-medium-and-up"><i class="fas fa-bars"></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</div>
+<ul class="sidenav" id="bouka">
+  <li class="blue white-text center"><img src="image/avatar.png" alt="" width="80px height: 80px;" class="circle">
+      <h5>Abdoul Atchamado</h5>
+      <p>test@gmail.com</p>
+  </li>
+  <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+  <li><a href="#">Posts</a></li>
+  <li><a href="#">Categories</a></li>
+  <li><a href="#">Comment</a></li>
+  <li><a href="#">Users</a></li>
+  <li><a href="#">Account Ccontrols</a></li>
+  <li><a href="#">Logout</a></li>
+</ul>
+
+
+
+<!--section: slider-->
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col s12 m6 l3 center">
+    <div class="card-panel blue">
+      <i class="far fa-grin fa-3x"></i>
+      <h4>Monthly Visitors</h4>
+      <h2>35900</h2>
+      <div class="progress grey lighten-1 ">
+        <div class="determinate white" style="width: 30%"></div>
+    </div>
+    </div>
+  </div>
+  <div class="col s12 m6 l3 center">
+    <div class="card-panel ">
+    <i class="fa-solid fa-pen fa-3x"></i>
+    <h4>Blog posts</h4>
+    <h2>207</h2>
+    <div class="progress grey lighten-1">
+      <div class="determinate" style="width: 20%"></div>
+  </div>
+  </div>
+</div>
+  <div class="col s12 m6 l3 center">
+    <div class="card-panel blue">
+    <i class="fa-regular fa-message fa-3x"></i>
+    <h4>Comments</h4>
+    <h2>2300</h2>
+    <div class="progress grey lighten-1">
+      <div class="determinate" style="width: 40%"></div>
+  </div>
+  </div>
+</div>
+  <div class="col s12 m6 l3 center">
+    <div class="card-panel">
+      <i class="fa-solid fa-user-group fa-3x"></i>
+      <h4>Users</h4>
+      <h2>410</h2>
+      <div class="progress grey lighten-1">
+        <div class="determinate" style="width: 10%"></div>
+    </div>
+  </div>
+</div>
+</div>
+          
+ <div class="container-fluid blue" style="margin: 0px; padding: 40px;">
+  <div class="row ">
+    
+    <div class="col s12 m8 blue">
+      <div id="chartContainer">
+        
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+       
+      </div>
+    </div>
+    <div class="col s12 m4 blue" >
+      <ul class="collection with-header">
+        <li class="collection-header"><h8>latests comment</h8>
+          <br>
+          <br>
+          <br>
+        </li>
+        <li class="collection-item avatar">
+          <img src="image/avatar.png" alt="MYADMIN" class="circle">
+          <span class="title">indi gana</span>
+          <p>First Line Second Line
+          </p>
+          <p><span class="  green-text">aprouve</span> <span class="ba #ff5722 deep-orange-text">Dany</span></p>
+        </li>
+        <li class="collection-item avatar">
+          <img src="image/avatar.png" alt="MYADMIN" class="circle">
+          <span class="title">hassi gana</span>
+          <p>First Line Second Line
+          </p>
+          <p><span class=" ba green-text ">aprouve</span> <span class="ba #ff5722 deep-orange-text">Dany</span></p>
+        </li>
+        <li class="collection-item avatar">
+          <img src="image/avatar.png" alt="MYADMIN" class="circle">
+          <span class="title">harira gana</span>
+          <p>First Line Second Line
+          </p>
+          <p><span class=" ba green-text">aprouve</span> <span class="ba #ff5722 deep-orange-text">Dany</span></p>
+        </li>
+        
+      </ul>
+    </div>
+
+
+
+
+  </div>
+
+</div>
+
+
+<div class="container-fluid " style="margin: 0px; padding: 40px;">
+  <div class="row ">
+    <div class="col s12 m8">
+    
+
+  
+    
+      <div class="striped">
+        <h2>Recent Payments</h2>
+       
+    </div>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Category</th>
+           
+        </tr>
+        <tr>
+            <td>Post One</td>
+            <td>Web Development</td>
+         
+            <td><a href="#" class="btn  blue lighten-2">Details</a></td>
+        </tr>
+        <tr>
+            <td>Post Two</td>
+            <td>Graphic Design</td>
+           
+            <td><a href="#" class="btn  blue lighten-2">Details</a></td>
+        </tr>
+        <tr>
+          <td>Post Three</td>
+          <td>Web Development</td>
+        
+          <td><a href="#" class="btn  blue lighten-2">Details</a></td>
+      </tr>
+       
+    </table>
+          
+
+
+  </div>
+
+  <div class="col s12 m4 ">
+   <div class="card-panel">
+        <h6>Quick Todos</h6>
+        <form><input type="text" id="add todo" placeholder="add todo..."></form>
+        <ul class="collection">
+            <li class="collection-item">
+                <div>Todo One<a href="#" class="secondary-content"><i class="material-icons">close</i></a></div>
+            </li>
+            <li class="collection-item">
+                <div>Todo One<a href="#" class="secondary-content"><i class="material-icons">close</i></a></div>
+            </li>
+
+        </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+  </div>
+
+</div>
+
+
+</div>
+
+
+<!--btn flotant-->
+<div class="fixed-action-btn">
+  <a href="" class="btn-floating btn-large red">
+      <i class="material-icons">add</i>
+  </a>
+  <ul>
+      <li class="btn-floating blue"><a href="#modala" class="modal-trigger"><i class="fas fa-pen"></i></a></li>
+      <li class="btn-floating blue"><a href="#modaly" class="modal-trigger"><i class="fas fa-folder"></i></a></li>
+      <li class="btn-floating blue"><a href="#modalo" class="modal-trigger"><i class="fas fa-user-friends"></i></a></li>
+                
+  </ul>
+</div>
+<!--modal 1-->
+<div id="modala" class="modal black-text">
+  <div class="modal-content">
+      <h5>Add Post</h5>
+      <form">
+          <div class="input-field">
+              <input type="text" id="Name" class="validate">
+              <label for="name">Title</label>
+          </div>
+          <div class="row">
+              <div class="input-field col s12">
+                  <select value="select">
+                      <option value="" disabled selected>categorie</option>
+                      <option value="1">poste one</option>
+                      <option value="2">poste two</option>
+                      <option value="3">poste three</option>
+                      <option value="4">poste four</option>
+                      <option value="5">poste five</option>
+                      <option value="6">poste six</option>
+                  </select>
+                  <label>Select option</label>
+              </div>
+
+              
+          </div>
+
+          
+  </div>
+  </form>
+  <div class="modal-footer">
+      <a href="" class="modal-close waves-effect waves-light btn blue ">SUBMIT</a>
+  </div>
+</div>
+
+<!--modal 2-->
+<div id="modaly" class="modal black-text">
+  <div class="modal-content">
+      <h6>Add Category</h6>
+      <div class="input-field">
+          <input type="text" id="name" class="validate">
+          <label for="name">Title</label>
+      </div>
+  </div>
+
+  <div class="modal-footer">
+      <a href="" class="modal-close waves-effect waves-light btn blue ">SUBMIT</a>
+  </div>
+</div>
+
+<!--modal 3-->
+<div id="modalo" class="modal black-text">
+  <div class="modal-content">
+      <h6>Add user</h6>
+      <div class="input-field">
+          <input type="text" id="#" class="validate">
+          <label for="#">Name</label>
+      </div>
+      <div class="input-field">
+          <input type="email" id="email" class="validate">
+          <label for="email">Email</label>
+      </div>
+      <div class="input-field">
+          <input type="password" id="password" class="validate">
+          <label for="password">Password</label>
+      </div>
+      <div class="input-field">
+          <input type="text" id="password" class="validate">
+          <label for="password">Confirm Password</label>
+      </div>
+  </div>
+  <div class="modal-footer">
+      <a href="" class="modal-close waves-effect waves-light btn blue ">SUBMIT</a>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="section  blue darken-1 white-text center">
+    
+    <p class="flow-text">Myadimin Ben &copy; 2022</p>
+  </footer>
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <script>
+    // Side Menu
+const sideNav = document.querySelector('.sidenav');
+M.Sidenav.init(sideNav, {});
+
+// Slider
+const slider = document.querySelector('.slider');
+M.Slider.init(slider, {
+    indicators: false,
+    height: 500,
+    transition: 500,
+    interval: 6000
+  });
+
+    </script>
+  </body>
+</html>
+
+<script>
+  window.onload = function () {
+  
+  var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    theme: "light2",
+    title:{
+      text: "Simple Line Chart"
+    },
+    data: [{        
+      type: "line",
+          indexLabelFontSize: 16,
+      dataPoints: [
+        { y: 450 },
+        { y: 414},
+        { y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+        { y: 460 },
+        { y: 450 },
+        { y: 500 },
+        { y: 480 },
+        { y: 480 },
+        { y: 410 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+        { y: 500 },
+        { y: 480 },
+        { y: 510 }
+      ]
+    }]
+  });
+  chart.render();
+  
+  }
+
+  </script>
+
+
+
+
+
+
+
+
+<script>
+
+ 
+  //FloatingActionButton
+  document.addEventListener('DOMContentLoaded', function () {
+      var elem = document.querySelectorAll('.fixed-action-btn');
+      var instances = M.FloatingActionButton.init(elem, {});
+  });
+
+  // modal script
+  document.addEventListener('DOMContentLoaded', function () {
+      var elem = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elem, {});
+  });
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+</script>
